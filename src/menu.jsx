@@ -1,30 +1,29 @@
 import { useContext, useState } from "react";
 import { myContext } from "./App";
 import { Link, useNavigate } from "react-router-dom";
+import { MondayAlbum } from "./album";
 import './input.css'
-import Monday from "./Monday";
 
 export default function Menu(){
     const context = useContext(myContext);
     if (!context) {
        console.error("Menu is not inside myContext.Provider");
     }
-    const { menuVisible, handleMenuVisiblity } = context || {};
+    const { menuVisible, handleMenuVisiblity, handleWedase } = context || {};
 
     const [yeEletuVisible, setYeEletu] = useState(false);
     function handleYeEletuVisibility(){
         setYeEletu((prevState)=>!prevState)
     }
-
-   const navigate = useNavigate();
+    
    const handleSelectedWedase = (id) =>{
-       navigate(`./Monday/${id}`);
+       handleWedase(id)
        handleMenuVisiblity()
    }
 
     return(
-        <div className={`fixed top-0 left-0 w-52 h-full bg-white text-white p-4 z-10 transition-all  duration-700 ease-out overflow-y-auto ${menuVisible ? "translate-x-0" : "-translate-x-full"} `}>
-            {console.log("menuVisible inside JSX:", menuVisible)}
+        <div className={` w-full h-full bg-transparent text-white p-4 z-10 `}>
+            {console.log("menuVisible inside JSX:", menuVisible)} 
             <div className="">
                 <img src="\assets\other\left-arrow.png" alt="" className="ml-auto " onClick={handleMenuVisiblity} width={25} height={25}/>
                 <ul className="text-red-900 mt-7">
@@ -33,7 +32,7 @@ export default function Menu(){
                             <h2>ዘዘሰኑይ</h2> <img className="w-12 h-12" src="\assets\other\down-arrow.png" alt="" onClick={handleYeEletuVisibility}/>
                         </div>
                         {yeEletuVisible && 
-                        <div className="flex justify-center">
+                        <div className="flex justify-start">
                             <ul className="flex flex-col ml-10">
                                 
                                 <li className="" onClick={()=>handleSelectedWedase(1)}>1. ፈቀደ</li>

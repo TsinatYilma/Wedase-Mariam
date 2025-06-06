@@ -1,8 +1,8 @@
 
 export const MondayAlbum = [
     {id: 1,
-     img: ["/assets/monday/ze_senuy/photo_2025-06-01_16-36-55.jpg","/assets/image-product-2-thumbnail.jpg"],
-     audio: ""},{id:2,
+     img: ["/assets/monday/ze_senuy/photo_2025-06-01_16-36-55.jpg"],
+     audio: "/assets/monday/ze_senuy/audio_2025-06-03_13-58-53.ogg"},{id:2,
                   img: ["",],
                   audio: ""},{id:3,
                     img: [""],

@@ -5,16 +5,13 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const MySwiper = ({wedase}) => {
-    let img = []
-    if (wedase.img.length >= 1){
-        for(let i = 0; i < wedase.img.length; i++){
-             img.push(wedase.img[i])
-        }
-    }
+  const defaultImg = ["/assets/monday/ze_senuy/selam-leki.jpg"];
+  // Check if wedase is available; use default image if not
+  const img = wedase?.img?.length >= 1 ? wedase.img : defaultImg;
     console.log(img)
     return (
       <Swiper
-        className='border-2 border-black h-full'
+        className=' h-full'
         modules={[Navigation, Pagination]}
         spaceBetween={50} 
         slidesPerView={1} 
@@ -25,7 +22,7 @@ const MySwiper = ({wedase}) => {
         pagination={{ clickable: true }}
       >
          {img.length > 0 && img.map((image, index) => (
-                   <SwiperSlide className='border-2 border-black h-full object-cover'> <img key={index} src={`${image}`} alt="not found" className="border-2 border-black w-full h-full object-contain" width={180} height={200}/></SwiperSlide>
+                   <SwiperSlide className='h-full object-cover'> <img key={index} src={`${image}`} alt="/assets/monday/ze_senuy/selam-leki.jpg" className=" w-full h-full object-contain" width={180} height={200}/></SwiperSlide>
                    ))}
       </Swiper>
     );

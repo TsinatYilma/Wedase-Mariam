@@ -6,12 +6,11 @@ import DisplayWedase from "./displayWedase";
 
 
 export default function Monday(){
-    const {id} = useParams()
     const [selectedWedase, setWedase] = useState(null)
     
-    useEffect(() => {
+    function handleWedase(id){
         setWedase(MondayAlbum.find(song => song.id.toString() === id));
-    }, [id]);
+    };
        console.log(selectedWedase)
     return(
         <div className="w-full h-screen">
