@@ -590,6 +590,10 @@ video {
   margin: 0.75rem;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -616,6 +620,10 @@ video {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .flex {
@@ -835,6 +843,10 @@ body{
 
   .xs\:gap-14 {
     gap: 3.5rem;
+  }
+
+  .xs\:p-0 {
+    padding: 0px;
   }
 
   .xs\:shadow-\[0px_0px_10px_5px_rgba\(0\2c 0\2c 0\2c 0\.2\)\] {
