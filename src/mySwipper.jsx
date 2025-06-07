@@ -22,7 +22,7 @@ const MySwiper = ({wedase}) => {
         pagination={{ clickable: true }}
       >
          {img.length > 0 && img.map((image, index) => (
-                   <SwiperSlide className='h-full object-cover'> <img key={index} src={`${image}`} alt="/assets/monday/ze_senuy/selam-leki.jpg" className=" w-full h-full object-contain" width={180} height={200}/></SwiperSlide>
+                   <SwiperSlide className='object-cover'> <img key={index} src={`${image}`} alt="/assets/monday/ze_senuy/selam-leki.jpg" className=" w-full h-full object-contain" width={180} height={200}/></SwiperSlide>
                    ))}
       </Swiper>
     );
