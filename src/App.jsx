@@ -31,7 +31,7 @@ function App() {
       <myContext.Provider value={contextValue}>
       <NavBar />
       <CloseMenu/>
-      
+      <Menu />
       <Routes>
         <Route path='/' element={<Home wedase={selectedWedase}/>}/>
       </Routes>
