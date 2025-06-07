@@ -5,7 +5,7 @@ import "./musicPlayer.css"
 
 
 function MyMusicPlayer({wedase}) {
-    const defaultAudio = "/assets/monday/ze_senuy/audio_2025-06-03_13-58-53.ogg"
+    const defaultAudio = "/assets/monday/ze_senuy/ሰላም ለኪ.mp3"
     const selectedAudio = wedase?.audio || defaultAudio;
     
     return (

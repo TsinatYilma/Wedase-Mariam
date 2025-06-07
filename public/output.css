@@ -805,10 +805,6 @@ body{
   .md\:justify-around {
     justify-content: space-around;
   }
-
-  .md\:gap-5 {
-    gap: 1.25rem;
-  }
 }
 
 @media (min-width: 1024px) {
