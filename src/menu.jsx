@@ -22,7 +22,7 @@ export default function Menu(){
    }
 
     return(
-        <div className={` h-full bg-transparent text-white p-4 z-10 fixed top-0 left-0 w-52 bg-white transition-all  duration-700 ease-out overflow-y-auto ${menuVisible ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 md:w-60`}>
+        <div className={` h-full bg-transparent text-white p-4 z-10 fixed top-0 left-0 bottom-0 w-52 bg-white transition-all  duration-700 ease-out overflow-y-auto ${menuVisible ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 md:w-60`}>
             {console.log("menuVisible inside JSX:", menuVisible)} 
             <div className="">
                 <img src="\assets\other\left-arrow.png" alt="" className="ml-auto " onClick={handleMenuVisiblity} width={25} height={25}/>

@@ -3,7 +3,7 @@ export const MondayAlbum = [
     {id: 1,
      img: ["/assets/monday/ze_senuy/photo_2025-06-01_16-36-55.jpg"],
      audio: "/assets/monday/ze_senuy/ፈቀደ.mp3"},{id:2,
-                  img: ["/assets/monday/sereke/photo_2025-06-01_16-36-52.jpg","/assets/monday/sereke/photo_2025-06-01_16-36-55.jpg"],
+                  img: ["/assets/monday/sereke/photo_2025-06-01_16-36-55.jpg","/assets/monday/sereke/photo_2025-06-01_16-36-52.jpg"],
                   audio: "/assets/monday/sereke/ሠረቀ በሥጋ .mp3"},{id:3,
                     img: ["/assets/monday/eyesus/photo_2025-06-01_16-36-49.jpg"],
                     audio: "/assets/monday/eyesus/ኢየሱስ ክርስቶስ .mp3"},{id:4,
